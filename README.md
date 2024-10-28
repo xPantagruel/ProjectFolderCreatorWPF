@@ -1,5 +1,7 @@
 # Project Folder Creator
 
+![App Interface](UI_SHOW.jpg)
+
 ## Overview
 
 The Project Folder Creator is a WPF application that helps you create a structured folder system for your projects based on predefined templates. It allows you to easily manage and organize project-related files.
@@ -12,7 +14,7 @@ The Project Folder Creator is a WPF application that helps you create a structur
      \ProjectFolderCreatorWPF\Release
      ```
    - Here, you will find the necessary files for running the application.
-   - 
+   -
 2. **Start the Application**:
    - Locate the `ProjectFolderCreatorWPF.exe` file in the folder and double-click it to run the application.
    - The app will start, and you can begin using it to create project folders based on templates.
@@ -25,6 +27,7 @@ The Project Folder Creator is a WPF application that helps you create a structur
 ## Code File Descriptions
 
 ### `MainWindow.xaml.cs`
+
 - **Purpose**: Handles the main application logic and user interface interactions.
 - **Key Functions**:
   - `BrowseButton_Click`: Allows users to select the base path for the project.
@@ -34,6 +37,7 @@ The Project Folder Creator is a WPF application that helps you create a structur
   - `HelpButton_Click`: Displays a help message with instructions on how to use the app.
 
 ### `TemplateManager.cs`
+
 - **Purpose**: Manages template-related functionalities, such as loading, creating, editing, and displaying templates.
 - **Key Functions**:
   - `SetDefaultTemplatesPath`: Sets up the default templates folder path relative to the executable location.
@@ -44,11 +48,13 @@ The Project Folder Creator is a WPF application that helps you create a structur
   - `CreateProject`: Creates the project folders based on the selected template.
 
 ### `PathManager.cs`
+
 - **Purpose**: Provides utility functions for managing file paths and directory selection.
 - **Key Functions**:
   - `BrowseForFolder`: Opens a folder selection dialog for the user to choose a directory.
 
 ### `MainWindow.xaml`
+
 - **Purpose**: Defines the layout and appearance of the user interface using XAML.
 - **Key Components**:
   - `Grid`: Organizes the layout of controls in rows and columns.
@@ -66,15 +72,19 @@ The Project Folder Creator is a WPF application that helps you create a structur
 ## How to Use
 
 1. **Enter Project and Client Names**
+
    - Fill in the "Project Name" and "Client Name" fields.
 
 2. **Select the Base Path**
+
    - Click the "Browse..." button next to the "Base Path" field to choose where the project folders should be created.
 
 3. **Select the Templates Folder**
+
    - If needed, click the "Browse..." button next to the "Templates Folder" field to change the folder where templates are stored.
 
 4. **Choose a Template**
+
    - Select a template from the dropdown list. You can view the template structure using the "Show Template" button, edit it using the "Edit Template" button, or create a new template using the "Create Template" button.
 
 5. **Create the Project**
